@@ -1,12 +1,17 @@
 import React from "react";
-import Home from "../components/pages/Home";
 import { Route, Routes } from "react-router-dom";
+import MyAccount from "../components/pages/myAcc/MyAccount";
+import Home from "../components/pages/home/Home";
 
 const MainRoutes = () => {
-  const routes = [
+  let routes = [
     {
       link: "/",
       element: <Home />,
+    },
+    {
+      link: "/account",
+      element: <MyAccount />,
     },
   ];
   return (

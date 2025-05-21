@@ -1,0 +1,22 @@
+.myAcc {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  .myAccInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    input {
+      padding: 5px;
+    }
+    .input {
+      position: relative;
+      .eye {
+        position: absolute;
+        left: 90%;
+      }
+    }
+  }
+}
