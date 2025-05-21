@@ -1,5 +1,5 @@
 import scss from "./main.module.scss";
-import shoes from "../../../assets/photo.svg";
+import shoes from "../../../assets/shoe.svg";
 
 const Main = () => {
   return (
