@@ -1,0 +1,34 @@
+.mainContainer {
+  padding-block: 50px;
+  .mainContent {
+    display: flex;
+    align-items: center;
+    .mainText {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        width: 720px;
+        font-size: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+        font-weight: 700px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 830px;
+        font-weight: 400;
+        font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+      }
+
+      button {
+      }
+    }
+    .mainImg {
+      img {
+        max-width: 720px;
+        height: 600px;
+        margin-left: -100px;
+      }
+    }
+  }
+}
