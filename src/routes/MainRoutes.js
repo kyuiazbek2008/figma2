@@ -5,15 +5,12 @@ import Main from "../components/pages/main/Main";
 import Shop from "../components/pages/shop/Shop";
 import ContactUs from "../components/pages/contactUs/ContactUs";
 import Product from "../components/pages/product/Product";
+import MyAccount from "../components/pages/myAccont/MyAccont";
 
 const MainRoutes = () => {
   const routes = [
     {
       link: "/",
-      element: <Home />,
-    },
-    {
-      link: "/main",
       element: <Main />,
     },
     {
@@ -27,6 +24,10 @@ const MainRoutes = () => {
     {
       link: "/products",
       element: <Product />,
+    },
+    {
+      link: "/myaccont",
+      element: <MyAccount />,
     },
   ];
   return (

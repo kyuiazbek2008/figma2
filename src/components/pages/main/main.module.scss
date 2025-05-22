@@ -1,33 +1,60 @@
 .mainContainer {
   padding-block: 50px;
+  background: rgba(231, 232, 233, 1);
   .mainContent {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .mainText {
       display: flex;
       flex-direction: column;
       gap: 20px;
       h1 {
-        width: 720px;
+        width: 440px;
         font-size: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
         font-weight: 700px;
       }
 
       p {
-        width: 100%;
-        max-width: 830px;
+        max-width: 340px;
         font-weight: 400;
         font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
       }
 
       button {
+        width: 100%;
+        max-width: 174px;
+        font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+        font-weight: 400px;
+        padding: 20px 10px;
+        color: #fff;
+        background-color: rgba(242, 39, 53, 1);
+        border: none;
+        cursor: pointer;
       }
     }
     .mainImg {
       img {
-        max-width: 720px;
+        max-width: 520px;
         height: 600px;
         margin-left: -100px;
+        animation-name: fade-in-right;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        view-timeline-name: --fade-in-createAcc;
+        animation-timeline: --fade-in-createAcc;
+        animation-range: 30% 40%;
+      }
+    }
+
+    @keyframes fade-in-right {
+      from {
+        opacity: -1;
+        transform: translateX(200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
   }
