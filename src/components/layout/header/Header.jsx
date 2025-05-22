@@ -33,13 +33,15 @@ const Header = () => {
           </div>
           <div className={scss.shop}>
             <img src={search} alt="" />
-            <img src={user} alt="" />
+            <Link to="/myaccont">
+              <img src={user} alt="" />
+            </Link>
             <img src={shop} alt="" />
           </div>
         </div>
         <div className={scss.navA}>
           <nav>
-            <Link to="/home">
+            <Link to="/">
               <p>Home</p>
             </Link>
             <Link to="/shop">
