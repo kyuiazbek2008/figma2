@@ -23,4 +23,95 @@
       }
     }
   }
+  .texts {
+    padding-block: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    .par {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .text3big {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .h1text {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .textp {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+          h1 {
+            font-size: 23px;
+            width: 200px;
+          }
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          max-width: 500px;
+          font-weight: 500;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+    }
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 400px;
+      }
+      .number {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+      .time {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        .whenTime {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .timeText {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            span {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
 }
