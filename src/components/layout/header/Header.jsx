@@ -13,7 +13,7 @@ const Header = () => {
     <header className={scss.header}>
       <div className="container">
         <div className={scss.content}>
-          <div className={scss.shop}>
+          <div className={scss.sho}>
             <img src={img} alt="" />
             <img src={twiter} alt="" />
             <img src={instogram} alt="" />

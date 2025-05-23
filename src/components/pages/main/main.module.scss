@@ -1,61 +1,114 @@
 .mainContainer {
+  position: relative;
   padding-block: 50px;
   background: rgba(231, 232, 233, 1);
+  @media (max-width: 1200px) {
+    padding-inline: 20px;
+  }
   .mainContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+
     .mainText {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @media (max-width: 768px) {
+        align-items: center;
+        max-width: 350px;
+      }
+
       h1 {
-        width: 440px;
+        max-width: 640px;
         font-size: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
-        font-weight: 700px;
+        font-weight: 700; // БЕЗ PX, ДОЛБОЁБ!
+
+        @media (max-width: 768px) {
+          max-width: 430px;
+          text-align: center;
+        }
       }
 
       p {
-        max-width: 340px;
+        max-width: 540px;
         font-weight: 400;
         font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
       }
 
       button {
-        width: 100%;
         max-width: 174px;
         font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
-        font-weight: 400px;
+        font-weight: 400;
         padding: 20px 10px;
         color: #fff;
         background-color: rgba(242, 39, 53, 1);
         border: none;
         cursor: pointer;
-      }
-    }
-    .mainImg {
-      img {
-        max-width: 520px;
-        height: 600px;
-        margin-left: -100px;
-        animation-name: fade-in-right;
-        animation-fill-mode: both;
-        animation-timing-function: linear;
-        view-timeline-name: --fade-in-createAcc;
-        animation-timeline: --fade-in-createAcc;
-        animation-range: 30% 40%;
+
+        @media (max-width: 768px) {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
 
-    @keyframes fade-in-right {
-      from {
-        opacity: -1;
-        transform: translateX(200px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
+    .mainImg {
+      img {
+        max-width: 500px;
+        height: auto;
+        max-height: 500px;
+
+        @media (max-width: 900px) {
+          max-width: 450px;
+          margin-left: 0;
+        }
+
+        @media (max-width: 800px) {
+          max-width: 400px;
+          margin-left: 0;
+        }
+
+        @media (max-width: 768px) {
+          max-width: 350px;
+          margin-left: 0;
+        }
+
+        @media (min-width: 769px) {
+          animation: fade-in-right 0.5s ease-out forwards;
+        }
+        @media (max-width: 400px) {
+          max-width: 300px;
+          margin-left: 0;
+        }
+        @media (max-width: 320px) {
+          max-width: 280px;
+          margin-left: 0;
+        }
       }
     }
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

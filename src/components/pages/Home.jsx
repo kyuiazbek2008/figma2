@@ -1,9 +1,12 @@
 import React from "react";
+import Main from "./main/Main";
+import InfoSection from "./InfoSection/Infosection";
 
 const Home = () => {
   return (
     <div>
-      <h1>print</h1>
+      <Main />
+      <InfoSection />
     </div>
   );
 };

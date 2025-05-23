@@ -1,2 +1,26 @@
 .footer {
+  .main {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 1);
+    .parent {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      .name {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
 }

@@ -11,7 +11,7 @@ const MainRoutes = () => {
   const routes = [
     {
       link: "/",
-      element: <Main />,
+      element: <Home />,
     },
     {
       link: "/shop",
